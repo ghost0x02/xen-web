@@ -77,6 +77,7 @@ print(Fore.RED + """
            ,__) /
             `..'
       XEN-web 1.0v
+TAMAMEN KALI LINUX İÇİN KODLANMIŞTIR 
 
 """)
 print(Style.RESET_ALL)
