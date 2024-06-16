@@ -14,7 +14,7 @@ os.system("clear")
 os.system("pip install python-whois")
 os.system("pip install requests")
 os.system("pip install beautifulsoup4")
-os.system("pip install dnspython")
+os.system("pip3 install dnspython")
 os.system("clear")
 
 
