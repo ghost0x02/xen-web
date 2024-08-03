@@ -1,12 +1,21 @@
 [![asciicast](https://asciinema.org/a/fWlInHCqVXaoFTMOW31zNAVJ7.svg)](https://asciinema.org/a/fWlInHCqVXaoFTMOW31zNAVJ7)
 
 
-## KALİ LİNUX İÇİN KURULUM:
+## KURULUM:
 
 ```
 git clone https://www.github.com/ghost0x02/xen-web
 cd xen-web
 python3 xen-web.py
+
+```
+
+## SQL-XSS:
+
+```
+SQL TAMAMEN OTOMATİK VERİ TABANI ÇEKER
+--------------------------------------
+XSS GİRİLEN SQL AÇIKLI SİTEYE BLİND PAYLOAD YÖNLENDİRİR
 
 ```
 
