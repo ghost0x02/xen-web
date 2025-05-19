@@ -1,4 +1,4 @@
-[![asciicast](https://asciinema.org/a/fWlInHCqVXaoFTMOW31zNAVJ7.svg)](https://asciinema.org/a/fWlInHCqVXaoFTMOW31zNAVJ7)
+
 
 
 ## KURULUM:
