@@ -273,7 +273,7 @@ def sql_attack():
   os.system("clear")
   os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " -C " + cl + " --dump")
 
-ef xss_scan(url):
+def xss_scan(url):
 
     os.system("clear")
     print(Fore.RED + """
