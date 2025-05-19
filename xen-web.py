@@ -93,7 +93,8 @@ print(Fore.CYAN + """
 (7) KULLANIM KOŞULLARI
 (8) DMITRY SORGU
 (9) DORK ÜRETİCİSİ
-(10) ÇIKIŞ
+(10) WHATWEB???
+(11) ÇIKIŞ
 
 """)
 
@@ -240,6 +241,7 @@ def http_header_check(url):
             print(f"{header}: {value}")
     except Exception as e:
         print(f"HTTP Kontrolü sırasında bir hata oluştu: {e}")
+
 def sql_attack():
 
   os.system("clear")
@@ -271,7 +273,7 @@ def sql_attack():
   os.system("clear")
   os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " -C " + cl + " --dump")
 
-def xss_scan(url):
+ef xss_scan(url):
 
     os.system("clear")
     print(Fore.RED + """
@@ -483,10 +485,31 @@ def kullanım_koşulları():
        - Eğer açık bulunduysa site sahiplerine bildirmeyi.
        - SQL VE XSS gibi zafiyet araçlarının doğru kullanımını.
        - Siber Güvenlik yapmak için saygın birisi olmanızı hedefliyoruz :D <3.
+    (8)
+
+        - Whatweb ve Dmitry araçlarını bir arada kullanarak hedef sistem üzerinde
+          detaylı aramalar yapabilirsiniz.
+
+
+                      Dmitry                                                        WhatWeb
+Amaç:     Ağ bilgisi toplama ve port taraması         <>           Web sitesi teknolojileri hakkında bilgi toplama
+
+Kapsadığı Alan: IP adresleri, açık portlar, DNS, Whois bilgiler <>   Web sunucusu, PHP sürümü, CMS, JavaScript, vb.
+
+Kullanıcı Girdisi:      Domain adı, IP adresi               <>                  Domain adı, IP adresi
+
+Web Sunucu Bilgisi:     Ağ tabanlı bilgileri sağlar         <>            Kullanılan web sunucusu ve versiyonu
+
+E-posta Adresleri:  Whois ve MX kayıtlarında e-posta adreslerini bulur   <>     Doğrudan e-posta toplamaz
+
+Teknoloji Tespiti: Sadece ağ tabanlı bilgileri analiz eder    <>         web teknolojileri ve yazılımlarını tespit eder
+
+Yöntem: Ağ odaklı bilgi toplama                     <>                            Web odaklı bilgi toplama
+
+
+
 
                        iletişim == ig: xsecit """)
-
-
 
 def dmt():
 
@@ -513,7 +536,6 @@ def dmt():
     time.sleep(2)
     os.system(f"dmitry -e {url}")
     time.sleep(2)
-
 
 def dork():
 
@@ -578,6 +600,14 @@ def dork():
     inurl:"php?id=" "pl"
     """)
 
+def whatweb():
+
+    os.system("clear")
+    print(Fore.YELLOW + "")
+    os.system(f"whatweb -v {url}")
+
+
+
 def exit():
 
     print(Fore.CYAN + "Görüşürüz dost!")
@@ -616,6 +646,11 @@ elif islemno == "8":
 elif islemno == "9":
     dork()
 elif islemno == "10":
+    print(Fore.MAGENTA + "")
+    url = input("Detaylı WEB taraması için host adını girin örnek -> (https://example.com): ")
+    whatweb()
+elif islemno == "11":
     exit()
+
 else:
     print(Fore.RED + "Geçersiz seçenek!!!")
