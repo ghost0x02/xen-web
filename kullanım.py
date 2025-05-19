@@ -46,5 +46,28 @@ print(Fore.RED + """
        - Eğer açık bulunduysa site sahiplerine bildirmeyi.
        - SQL VE XSS gibi zafiyet araçlarının doğru kullanımını.
        - Siber Güvenlik yapmak için saygın birisi olmanızı hedefliyoruz :D <3.
+    (8)
 
-                       iletişim == ig: xsecit""")
+        - Whatweb ve Dmitry araçlarını bir arada kullanarak hedef sistem üzerinde
+          detaylı aramalar yapabilirsiniz.
+
+
+                      Dmitry                                                        WhatWeb
+Amaç:     Ağ bilgisi toplama ve port taraması         <>           Web sitesi teknolojileri hakkında bilgi toplama
+
+Kapsadığı Alan: IP adresleri, açık portlar, DNS, Whois bilgiler <>   Web sunucusu, PHP sürümü, CMS, JavaScript, vb.
+
+Kullanıcı Girdisi:      Domain adı, IP adresi               <>                  Domain adı, IP adresi
+
+Web Sunucu Bilgisi:     Ağ tabanlı bilgileri sağlar         <>            Kullanılan web sunucusu ve versiyonu
+
+E-posta Adresleri:  Whois ve MX kayıtlarında e-posta adreslerini bulur   <>     Doğrudan e-posta toplamaz
+
+Teknoloji Tespiti: Sadece ağ tabanlı bilgileri analiz eder    <>         web teknolojileri ve yazılımlarını tespit eder
+
+Yöntem: Ağ odaklı bilgi toplama                     <>                            Web odaklı bilgi toplama
+
+
+
+
+                       iletişim == ig: xsecit """)
