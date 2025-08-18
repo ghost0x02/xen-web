@@ -1,17 +1,19 @@
 ## XEN-WEB nedir?:
 
 ```
--> XEN-WEB internet sitelerine karşı bir nevi vulnerability aracıdır.
--> 🔍PING - DNS - WHOIS - HTTP CONTROL - SQL - DMITRY - DORK GEN. - WHATWEB
-    Gibi araçları bünyesinde bulundurur.
+-> ✅ XEN-WEB internet sitelerine karşı bir nevi vulnerability aracıdır.
+-> 🔍 PING - DNS - WHOIS - HTTP CONTROL - SQL - DMITRY - DORK GEN. - WHATWEB
+     Gibi araçları bünyesinde bulundurur.
 ```
 
-## SQL-XSS:
+## İşlevi nedir?:
 
 ```
-SQL TAMAMEN OTOMATİK VERİ TABANI ÇEKER
---------------------------------------
-XSS GİRİLEN SQL AÇIKLI SİTEYE BLİND PAYLOAD YÖNLENDİRİR
+🌐 PING  = Hostun erişilebilir olup olmadığını kontrol eder.
+🔍 DNS   = Girilen hostun DNS kaydını sorgular ve alt alanları sunar.
+🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak sorgulanan alanların
+           Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - İsim sunucularını sunar.
+
 
 ```
 
