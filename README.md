@@ -12,7 +12,7 @@
 🌐 PING  = Hostun erişilebilir olup olmadığını kontrol eder.
 🔍 DNS   = Girilen hostun DNS kaydını sorgular ve alt alanları sunar.
 🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak sorgulanan alanların
-          Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - İsim sunucularını sunar.
+           Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - İsim sunucularını sunar.
 
 
 ```
