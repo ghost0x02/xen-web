@@ -29,7 +29,8 @@
            Sahip web sitelerini listeler.
 
 ❓ WHATWEB = Girilen hostun teknolojik alt yapısını tespit eder
-             CMS (içerik yönetim sistemi) - Programlama dilleri - JavaScript kütüphaneleri
+             CMS (içerik yönetim sistemi) - Programlama dilleri - JavaScript kütüphaneleri -
+             PHP sürümü - WEB sunucusu verisyonu
              Gibi bilgileri kullanıcıya sunar.
 
 
