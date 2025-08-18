@@ -1,13 +1,9 @@
-
-
-
-## KURULUM:
+## XEN-WEB nedir?:
 
 ```
-git clone https://www.github.com/ghost0x02/xen-web
-cd xen-web
-python3 xen-web.py
-
+-> XEN-WEB internet sitelerine karşı bir nevi vulnerability aracıdır.
+-> 🔍PING - DNS - WHOIS - HTTP CONTROL - SQL - DMITRY - DORK GEN. - WHATWEB
+    Gibi araçları bünyesinde bulundurur.
 ```
 
 ## SQL-XSS:
