@@ -16,6 +16,10 @@
 
 ⚙️ HTTP CONTROL = Girilen hostun, Sunucu türünü - Güvenlik ayarlarını - Önbellek politikalarını
                   Analiz edip HTTP başlıklarını sıralar.
+🗂 SQL   = Belirtilen host üzerinde SQL testini tamamen otomatikleştirir,
+           Her bir aşamada INPUT ile seçenekledirme yapıp, yapılan seçeneğe göre işlem yapar.
+           Böylece "OTOMATİK" bir şekilde veri tabanında gezinme fırsatı sunar.
+
 
 ```
 
