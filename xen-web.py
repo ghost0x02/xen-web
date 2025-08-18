@@ -59,6 +59,8 @@ __  _______ _   _    __        _______ ____
  /  \| |___| |\  |_____\ V  V / | |___| |_) |
 /_/\_\_____|_| \_|      \_/\_/  |_____|____/
 
+   <vulnerability tool 1.2v>
+   
    github -> https://github.com/ghost0x02/xen-web
 
    instagram -> xsecit
