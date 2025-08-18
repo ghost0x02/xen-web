@@ -1,4 +1,4 @@
-  GNU nano 8.3                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 import subprocess
 import platform
 import socket
@@ -444,10 +444,3 @@ elif islemno == "10":
     exit()
 else:
     print(Fore.RED + "Geçersiz seçenek!!!")
-
-
-
-
-
-
-
