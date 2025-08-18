@@ -1,4 +1,4 @@
-  GNU nano 8.3                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 import subprocess
 import platform
 import socket
@@ -289,7 +289,7 @@ def kullanım_koşulları():
        - Siber Güvenlik yapmak için saygın birisi olmanızı hedefliyoruz :D <3.
     (7)
 
-        - Whatweb kullanarak hedef sistem üzerinde detaylı web teknolojisi taramaları yapabilirsiniz.
+       - Whatweb kullanarak hedef sistem üzerinde detaylı web teknolojisi taramaları yapabilirsiniz.
         
                        iletişim == ig: xsecit """)
 
