@@ -1,4 +1,4 @@
-## XEN-WEB nedir?:
+## XEN-WEB nedir?
 
 ```
 -> ✅ XEN-WEB internet sitelerine karşı bir nevi vulnerability aracıdır.
@@ -6,7 +6,7 @@
      Gibi araçları bünyesinde bulundurur.
 ```
 
-## İşlevi nedir?:
+## İşlevi nedir?
 
 ```
 🌐 PING  = Hostun erişilebilir olup olmadığını kontrol eder.
@@ -14,6 +14,8 @@
 🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak sorgulanan alanların
            Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - İsim sunucularını sunar.
 
+⚙️ HTTP CONTROL = Girilen hostun, Sunucu türünü - Güvenlik ayarlarını - Önbellek politikalarını
+                  Analiz edip HTTP başlıklarını sıralar.
 
 ```
 
