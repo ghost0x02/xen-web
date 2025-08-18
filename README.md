@@ -24,7 +24,8 @@
            Her bir aşamada INPUT ile seçenekledirme yapıp, yapılan seçeneğe göre işlem yapar.
            Böylece "OTOMATİK" bir şekilde veri tabanında gezinme fırsatı sunar.
 
-📖 DORK  = Bu seçenek ile "Google Hacking Database" sorgusu yapabilecek potansiyel güvenlik açıklarına
+📖 DORK  = Bu seçenek ile "Google Hacking Database" sorgusu yapabilecek
+           Potansiyel güvenlik açıklarına
            Sahip web sitelerini listeler.
 
 ❓ WHATWEB = Girilen hostun teknolojik alt yapısını tespit eder
