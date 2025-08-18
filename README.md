@@ -2,7 +2,7 @@
 
 ```
 -> ✅ XEN-WEB internet sitelerine karşı bir nevi vulnerability aracıdır.
--> 🔍 PING - DNS - WHOIS - HTTP CONTROL - SQL - DMITRY - DORK GEN. - WHATWEB
+-> 🔍 PING - DNS - WHOIS - HTTP CONTROL - SQL - DORK GEN. - WHATWEB
      Gibi araçları bünyesinde bulundurur.
 ```
 
@@ -11,14 +11,26 @@
 ```
 🌐 PING  = Hostun erişilebilir olup olmadığını kontrol eder.
 🔍 DNS   = Girilen hostun DNS kaydını sorgular ve alt alanları sunar.
-🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak sorgulanan alanların
-           Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - İsim sunucularını sunar.
+🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak, sorgulanan alanların
+           Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - Domain adı -
+           WHOIS sunucusu - Durum - Email - Adres - Şehir - Eyalet - Posta kodu -
+           Ülke gibi bilgileri sunar.
+           
 
 ⚙️ HTTP CONTROL = Girilen hostun, Sunucu türünü - Güvenlik ayarlarını - Önbellek politikalarını
                   Analiz edip HTTP başlıklarını sıralar.
+
 🗂 SQL   = Belirtilen host üzerinde SQL testini tamamen otomatikleştirir,
            Her bir aşamada INPUT ile seçenekledirme yapıp, yapılan seçeneğe göre işlem yapar.
            Böylece "OTOMATİK" bir şekilde veri tabanında gezinme fırsatı sunar.
+
+📖 DORK  = Bu seçenek ile "Google Hacking Database" sorgusu yapabilecek potansiyel güvenlik açıklarına
+           Sahip web sitelerini listeler.
+
+❓ WHATWEB = Girilen hostun teknolojik alt yapısını tespit eder
+             CMS (içerik yönetim sistemi) - Programlama dilleri - JavaScript kütüphaneleri
+             Gibi bilgileri kullanıcıya sunar.
+
 
 
 ```
