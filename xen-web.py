@@ -1,4 +1,3 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 import subprocess
 import platform
 import socket
