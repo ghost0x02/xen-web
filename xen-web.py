@@ -1,3 +1,4 @@
+  GNU nano 8.3                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sql.py                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 import subprocess
 import platform
 import socket
@@ -74,10 +75,9 @@ print(Fore.CYAN + """
 (4)> HTTP KONTROLÜ <
 (5)> SQL SALDIRISI <
 (6)> KULLANIM KOŞULLARI <
-(7)> DMITRY SORGU <
-(8)> DORK ÜRETİCİSİ <
-(9)> WHATWEB??? <
-(10)> ÇIKIŞ <
+(7)> DORK ÜRETİCİSİ <
+(8)> WHATWEB??? <
+(9)> ÇIKIŞ <
 
 """)
 
@@ -289,53 +289,9 @@ def kullanım_koşulları():
        - Siber Güvenlik yapmak için saygın birisi olmanızı hedefliyoruz :D <3.
     (7)
 
-        - Whatweb ve Dmitry araçlarını bir arada kullanarak hedef sistem üzerinde
-          detaylı aramalar yapabilirsiniz.
-
-
-                      Dmitry                                                        WhatWeb
-Amaç:     Ağ bilgisi toplama ve port taraması         <>           Web sitesi teknolojileri hakkında bilgi toplama
-
-Kapsadığı Alan: IP adresleri, açık portlar, DNS, Whois bilgiler <>   Web sunucusu, PHP sürümü, CMS, JavaScript, vb.
-
-Kullanıcı Girdisi:      Domain adı, IP adresi               <>                  Domain adı, IP adresi
-
-Web Sunucu Bilgisi:     Ağ tabanlı bilgileri sağlar         <>            Kullanılan web sunucusu ve versiyonu
-
-E-posta Adresleri:  Whois ve MX kayıtlarında e-posta adreslerini bulur   <>     Doğrudan e-posta toplamaz
-
-Teknoloji Tespiti: Sadece ağ tabanlı bilgileri analiz eder    <>         web teknolojileri ve yazılımlarını tespit eder
-
-Yöntem: Ağ odaklı bilgi toplama                     <>                            Web odaklı bilgi toplama
-
-
-
-
+        - Whatweb kullanarak hedef sistem üzerinde detaylı web teknolojisi taramaları yapabilirsiniz.
+        
                        iletişim == ig: xsecit """)
-
-def dmt():
-    os.system("clear")
-    print(Fore.RED + """
-
-
-██████╗ ███╗   ███╗██╗████████╗██████╗ ██╗   ██╗
-██╔══██╗████╗ ████║██║╚══██╔══╝██╔══██╗╚██╗ ██╔╝
-██║  ██║██╔████╔██║██║   ██║   ██████╔╝ ╚████╔╝
-██║  ██║██║╚██╔╝██║██║   ██║   ██╔══██╗  ╚██╔╝
-██████╔╝██║ ╚═╝ ██║██║   ██║   ██║  ██║   ██║
-╚═════╝ ╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝
-""")
-
-    os.system(f"dmitry -w {url}")
-    time.sleep(2)
-    os.system(f"dmitry -i {url}")
-    time.sleep(2)
-    os.system(f"dmitry -n {url}")
-    time.sleep(2)
-    os.system(f"dmitry -s {url}")
-    time.sleep(2)
-    os.system(f"dmitry -e {url}")
-    time.sleep(2)
 
 def dork():
     os.system("clear")
@@ -430,16 +386,12 @@ elif islemno == "6":
     print(Fore.MAGENTA + "")
     kullanım_koşulları()
 elif islemno == "7":
-    print(Fore.MAGENTA + "")
-    url = input("Dmitry taraması yapmak istediğiniz URL adresini girin: ")
-    dmt()
-elif islemno == "8":
     dork()
-elif islemno == "9":
+elif islemno == "8":
     print(Fore.MAGENTA + "")
     url = input("Detaylı WEB taraması için host adını girin örnek ->[](https://example.com): ")
     whatweb()
-elif islemno == "10":
+elif islemno == "9":
     exit()
 else:
     print(Fore.RED + "Geçersiz seçenek!!!")
