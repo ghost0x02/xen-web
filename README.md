@@ -12,31 +12,19 @@
 ## İşlevi nedir?
 
 ```
-🌐 PING  = Hostun erişilebilir olup olmadığını kontrol eder.
-🔍 DNS   = Girilen hostun DNS kaydını sorgular ve alt alanları sunar.
-🎭 WHOIS = Girilen hostun alt alanlarını sorgulayarak, sorgulanan alanların
-           Kayıt tarihi - Kayıt sahibi - Son kullanma tarihi - Domain adı -
-           WHOIS sunucusu - Durum - Email - Adres - Şehir - Eyalet - Posta kodu -
-           Ülke gibi bilgileri sunar.
-           
+PING: Hedef sistemin ağ üzerinde erişilebilir durumda olup olmadığını ve yanıt sürelerini kontrol eder.
 
-⚙️ HTTP CONTROL = Girilen hostun, Sunucu türünü - Güvenlik ayarlarını - Önbellek politikalarını
-                  Analiz edip HTTP başlıklarını sıralar.
+DNS Sorgulaması: Hedef alan adına ait DNS kayıtlarını inceleyerek alan adı sunucularını ve bağlı alt alan adlarını (subdomain) tespit eder.
 
-🗂 SQL   = Belirtilen host üzerinde SQL testini tamamen otomatikleştirir,
-           Her bir aşamada INPUT ile seçenekledirme yapıp, yapılan seçeneğe göre işlem yapar.
-           Böylece "OTOMATİK" bir şekilde veri tabanında gezinme fırsatı sunar.
+WHOIS Analizi: Hedef alan adının tescil bilgilerini sorgulayarak kayıt sahibi, kayıt/bitiş tarihleri, domain durumu, iletişim bilgileri (e-posta, adres) ve ilgili WHOIS sunucu verilerini raporlar.
 
-📖 DORK  = Bu seçenek ile "Google Hacking Database" sorgusu yapabilecek
-           Potansiyel güvenlik açıklarına
-           Sahip web sitelerini listeler.
+HTTP Başlık Analizi: Hedef sunucunun HTTP yanıt başlıklarını inceleyerek sunucu yazılımı, aktif güvenlik politikaları (security headers) ve önbellekleme yapılandırmalarını analiz eder.
 
-❓ WHATWEB = Girilen hostun teknolojik alt yapısını tespit eder
-             CMS (içerik yönetim sistemi) - Programlama dilleri - JavaScript kütüphaneleri -
-             PHP sürümü - WEB sunucusu verisyonu
-             Gibi bilgileri kullanıcıya sunar.
+Otomatik SQL Enjeksiyon Testi: Hedef sistem üzerindeki SQL enjeksiyon zafiyetlerini otomatik olarak test eder. Kullanıcı girdilerine göre aşamalı yönlendirme sağlayarak veri tabanı yapısı ve içeriği üzerinde gezinme imkanı sunar.
 
+Dork Sorgulama: Google Hacking Database (GHDB) tekniklerini kullanarak potansiyel güvenlik zafiyeti barındıran veya hassas bilgi sızdıran web sitelerini tespit eder.
 
+Teknoloji Tespiti (WhatWeb): Hedef web sitesinin alt yapısında kullanılan teknolojileri analiz eder. İçerik yönetim sistemleri (CMS), çalıştırılan programlama dilleri, JavaScript kütüphaneleri, PHP ve web sunucu sürüm bilgilerini belirler.
 
 ```
 
